@@ -14,4 +14,40 @@ Light:#fff7e6
 
 body {
   font-family: "Poppins", sans-serif;
+  color: #191200;
+}
+
+.logo {
+  font-weight: 500;
+  border-radius: 9px;
+  padding: 6px;
+}
+header {
+  height: 100vh;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: #191200;
+  text-transform: uppercase;
+}
+
+.main {
+  display: flex;
+}
+
+.hero-img {
+  height: 400px;
 }
