@@ -55,6 +55,11 @@ nav {
   text-transform: uppercase;
 }
 
+.nav-item:hover,
+.nav-item:active {
+  color: #ffa94d;
+}
+
 .header-box {
   width: 1200px;
   margin: 100px auto;
