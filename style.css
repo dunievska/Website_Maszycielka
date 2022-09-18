@@ -29,6 +29,12 @@ header {
   height: 100vh;
   padding: 0 30px;
 }
+
+section {
+  margin: 100px auto;
+  width: 1200px;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -63,16 +69,19 @@ nav {
   justify-content: center;
   align-items: flex-start;
 }
+
 .header-title {
   font-size: 56px;
   line-height: 1.3;
   margin-bottom: 32px;
 }
+
 .header-text {
   font-size: 32px;
   line-height: 1.2;
   margin-bottom: 32px;
 }
+
 .btn {
   display: block;
   background-color: #ffa94d;
@@ -84,8 +93,45 @@ nav {
   letter-spacing: 3px;
   font-size: 24px;
   font-family: "Poppins", sans-serif;
+  cursor: pointer;
 }
+
 .header-img {
   height: 500px;
   border-radius: 12px;
+}
+
+.features-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 80px;
+}
+
+.features-header {
+  font-size: 36px;
+  margin-bottom: 48px;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.features-icon {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 18px;
+  background-color: #ffa94d;
+  border-radius: 50%;
+  padding: 4px;
+}
+
+.features-title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.features-text {
+  font-size: 18px;
 }
