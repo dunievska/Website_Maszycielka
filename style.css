@@ -123,6 +123,7 @@ nav {
 .features-header {
   font-size: 36px;
   margin-bottom: 48px;
+  font-weight: 500;
 }
 
 .features {
@@ -149,7 +150,7 @@ nav {
   font-size: 18px;
 }
 
-.current-sale {
+.sale-section {
   display: flex;
   justify-content: center;
   gap: 80px;
@@ -198,4 +199,77 @@ nav {
 .btn-shop_now {
   display: block;
   align-self: flex-start;
+}
+
+.testimonial-section {
+  /* padding: 45px 80px; */
+}
+.testimonial-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 120px;
+}
+.testimonial-title {
+  grid-column: 1/-1;
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 45px;
+  /* display: flex;
+  justify-content: center; */
+}
+
+.testimonial {
+  background-color: #fff6ed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 18px;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 10px 30px 0 rgba(25, 17, 8, 0.09);
+}
+
+.testimonial-text {
+  font-size: 18px;
+  line-height: 1.7;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+.testimonial-text::before {
+  content: open-quote;
+  color: #ffa94d;
+  font-size: 36px;
+  line-height: 1.6px;
+  margin-right: 2px;
+  vertical-align: -20px;
+}
+
+.testimonial-text::after {
+  content: close-quote;
+  color: #ffa94d;
+  font-size: 36px;
+  line-height: 1.6px;
+  margin-left: 2px;
+  vertical-align: -5px;
+}
+
+.testimonial-author {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: auto 1fr;
+  column-gap: 12px;
+}
+.author-img {
+  border-radius: 50%;
+  width: 70px;
+  grid-row: 1/-1;
+}
+.author-name {
+  grid-row: 1/2;
+  color: #ffa94d;
+  align-self: center;
+}
+.author-description {
+  grid-row: 2/3;
+  color: #66441f;
+  align-self: center;
 }
