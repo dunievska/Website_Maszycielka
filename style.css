@@ -201,9 +201,6 @@ nav {
   align-self: flex-start;
 }
 
-.testimonial-section {
-  /* padding: 45px 80px; */
-}
 .testimonial-box {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -214,8 +211,6 @@ nav {
   font-size: 36px;
   font-weight: 500;
   margin-bottom: 45px;
-  /* display: flex;
-  justify-content: center; */
 }
 
 .testimonial {
