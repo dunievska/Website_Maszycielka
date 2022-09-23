@@ -36,6 +36,10 @@ section {
   width: 1200px;
 }
 
+/* .hidden {
+  display: none;
+} */
+
 button {
   background-color: #ffa94d;
   border: none;
@@ -46,6 +50,7 @@ button {
   letter-spacing: 3px;
   font-size: 24px;
   font-family: "Poppins", sans-serif;
+  box-shadow: 0 10px 30px 0 rgba(25, 17, 8, 0.09);
 }
 
 button:hover {
@@ -267,4 +272,75 @@ nav {
   grid-row: 2/3;
   color: #66441f;
   align-self: center;
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.accordion-header {
+  font-size: 36px;
+  margin-bottom: 45px;
+  font-weight: 500;
+}
+
+.accordion-item {
+  box-shadow: 0 10px 30px 0 rgba(25, 17, 8, 0.09);
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  column-gap: 24px;
+  row-gap: 32px;
+  align-items: center;
+  padding: 24px;
+  background-color: #fff6ed;
+  border-radius: 12px;
+}
+.accordion-number {
+  font-size: 24px;
+  color: #ffc078;
+}
+.accordion-title {
+  font-size: 24px;
+}
+
+.accordion-icon {
+  width: 24px;
+  height: 24px;
+  stroke: #ffc078;
+}
+
+.accordion-item:hover {
+  background-color: #ffc078;
+  cursor: pointer;
+}
+
+.accordion-item:hover .accordion-icon {
+  stroke: #fff;
+}
+
+.accordion-item:hover .accordion-number {
+  color: #fff;
+}
+
+.accordion-text {
+  grid-column: 2;
+  font-size: 18px;
+}
+
+.hidden {
+  display: none;
+}
+
+.open .accordion-icon {
+  stroke: #ffa94d;
+}
+
+.open .accordion-title {
+  color: #ffa94d;
+}
+
+.open .accordion-text {
+  display: block;
 }
