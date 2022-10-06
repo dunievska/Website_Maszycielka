@@ -1,7 +1,7 @@
 const section1 = document.querySelector(".section--1");
 const header = document.querySelector(".header-box");
 const nav = document.querySelector(".nav");
-const navHeight = nav.getBoundingClientRect();
+const navHeight = nav.getBoundingClientRect().height;
 
 // STICKY NAV //
 
@@ -15,7 +15,7 @@ const stickyNav = function (entries) {
 const headerObserver = new IntersectionObserver(stickyNav, {
   root: null,
   threshold: 0,
-  rootMargin: "-100px",
+  rootMargin: `${-navHeight}px`,
 });
 
 headerObserver.observe(header);
