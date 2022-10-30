@@ -9,27 +9,13 @@ body {
   color: #191108;
 }
 
-.logo {
-  font-weight: 500;
-  letter-spacing: 3px;
-  font-size: 24px;
-  display: flex;
-  align-items: center;
-  text-shadow: 0 0 15px #ffa94d;
-}
-
-.header {
-  height: 100vh;
-  padding: 0 30px;
-}
+/*******************************/
+/* GENERAL REUSABLE COMPONENT */
+/*******************************/
 
 section {
   margin: 150px auto;
   width: 1200px;
-}
-
-.hidden {
-  display: none;
 }
 
 button {
@@ -50,6 +36,18 @@ button:hover {
   background-color: #ffc078;
 }
 
+/*******************************/
+/* HEADER */
+/*******************************/
+.header {
+  height: 100vh;
+  padding: 0 30px;
+}
+
+.hidden {
+  display: none;
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -57,6 +55,15 @@ button:hover {
   height: 100px;
   width: 100%;
   z-index: 100;
+}
+
+.logo {
+  font-weight: 500;
+  letter-spacing: 3px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  text-shadow: 0 0 15px #ffa94d;
 }
 
 .nav.sticky {
@@ -121,16 +128,20 @@ button:hover {
   border-radius: 12px;
 }
 
-.features-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 80px;
-}
+/*******************************/
+/* FEATURES SECTION */
+/*******************************/
 
 .features-header {
   font-size: 36px;
   margin-bottom: 48px;
   font-weight: 500;
+}
+
+.features-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 80px;
 }
 
 .features {
@@ -156,6 +167,10 @@ button:hover {
 .features-text {
   font-size: 18px;
 }
+
+/*******************************/
+/* SALES SECTION */
+/*******************************/
 
 .sale-section {
   display: flex;
@@ -207,6 +222,10 @@ button:hover {
   display: block;
   align-self: flex-start;
 }
+
+/*******************************/
+/* TESTIMONIALS SECTION */
+/*******************************/
 
 .testimonial-box {
   display: grid;
@@ -276,6 +295,48 @@ button:hover {
   align-self: center;
 }
 
+/*******************************/
+/* PRODUCTS SECTION */
+/*******************************/
+
+.products-section {
+}
+
+.products-header {
+  font-size: 36px;
+  margin-bottom: 45px;
+  font-weight: 500;
+}
+.product-container {
+  display: flex;
+  justify-content: space-between;
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.product-img {
+  width: 240px;
+  border-radius: 12px;
+}
+.product-name {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+.product-price {
+  font-weight: 500;
+  font-size: 20px;
+}
+.btn--add-cart {
+  padding: 7px 16px;
+  font-size: 22px;
+}
+
+/*******************************/
+/* ACCORDION SECTION */
+/*******************************/
 .accordion {
   display: flex;
   flex-direction: column;
@@ -347,40 +408,9 @@ button:hover {
   display: block;
 }
 
-.products-section {
-}
-
-.products-header {
-  font-size: 36px;
-  margin-bottom: 45px;
-  font-weight: 500;
-}
-.product-container {
-  display: flex;
-  justify-content: space-between;
-}
-.product {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-.product-img {
-  width: 240px;
-  border-radius: 12px;
-}
-.product-name {
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-}
-.product-price {
-  font-weight: 500;
-  font-size: 20px;
-}
-.btn--add-cart {
-  padding: 7px 16px;
-  font-size: 22px;
-}
+/*******************************/
+/* FOOTER */
+/*******************************/
 
 footer {
   background-color: #ffc078;
