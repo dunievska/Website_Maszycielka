@@ -17,7 +17,8 @@ body {
   align-items: center;
   text-shadow: 0 0 15px #ffa94d;
 }
-header {
+
+.header {
   height: 100vh;
   padding: 0 30px;
 }
@@ -62,6 +63,8 @@ button:hover {
   position: fixed;
   background-color: rgba(255, 255, 255, 0.95);
   top: 0;
+  right: 0;
+  box-shadow: 0 10px 30px 0 rgba(25, 17, 8, 0.03);
 }
 
 .nav-container {
